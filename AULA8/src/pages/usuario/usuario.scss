@@ -1,0 +1,173 @@
+.usuario {
+
+    width: 500px;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d1d5db;
+
+    border-top: 5px solid #1e3a8a;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
+
+    font-family: Arial, sans-serif;
+
+
+    h1 {
+
+        text-align: center;
+
+        color: #1e3a8a;
+
+        font-size: 30px;
+
+        margin-bottom: 30px;
+    }
+
+
+    h2 {
+
+        margin-top: 25px;
+
+        margin-bottom: 15px;
+
+        color: #1e40af;
+
+        font-size: 20px;
+
+        border-bottom: 2px solid #dbeafe;
+
+        padding-bottom: 8px;
+    }
+
+
+    form {
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+
+    label {
+
+        margin-top: 12px;
+
+        margin-bottom: 6px;
+
+        color: #374151;
+
+        font-size: 15px;
+
+        font-weight: bold;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+
+        padding: 11px;
+
+        border: 1px solid #9ca3af;
+
+        border-radius: 6px;
+
+        background-color: #f9fafb;
+
+        font-size: 15px;
+
+        outline: none;
+    }
+
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="date"]:focus,
+    select:focus,
+    textarea:focus {
+
+        border-color: #2563eb;
+
+        background-color: #ffffff;
+
+        box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+    }
+
+
+    input[type="radio"] {
+
+        margin-right: 8px;
+
+        accent-color: #2563eb;
+    }
+
+
+    textarea {
+
+        height: 100px;
+
+        resize: vertical;
+    }
+
+
+    button {
+
+        margin-top: 25px;
+
+        padding: 13px;
+
+        border: none;
+
+        border-radius: 6px;
+
+        background-color: #1e3a8a;
+
+        color: white;
+
+        font-size: 16px;
+
+        font-weight: bold;
+
+        cursor: pointer;
+    }
+
+
+    button:hover {
+
+        background-color: #2563eb;
+    }
+
+
+    a {
+
+        text-align: center;
+
+        margin-top: 10px;
+
+        color: #1d4ed8;
+
+        font-weight: bold;
+
+        text-decoration: none;
+    }
+
+
+    a:hover {
+
+        color: #1e3a8a;
+
+        text-decoration: underline;
+    }
+
+}
