@@ -14,6 +14,7 @@ import Cabecalho from '../../componentes/cabecalho/cabecalho.jsx';
         <Link to="/contador2">Ir para Contador2</Link>
         <Link to="/hobbie">Ir para Hobbie</Link>
         <Link to="/calculadora">Ir para Calculadora</Link>
+        <Link to="/calculadora2">Ir para Calculadora2</Link>
         <Link to="/api">Ir para APICEP</Link>
       </div>
     );

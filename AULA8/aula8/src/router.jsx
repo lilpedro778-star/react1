@@ -22,6 +22,7 @@ export default function Router() {
                   <Route path="/contador" element={<Contador />} />
                 <Route path="/contador2" element={<Contador2 />} />
                 <Route path="/calculadora" element={<Calculadora />} />
+                <Route path="/calculadora2" element={<Calculadora2 />} />
                 <Route path="/hobbie" element={<Hobbie />} />
                 <Route path="/api" element={<Api />} />
                 <Route path="*" element={<NotFound />} />

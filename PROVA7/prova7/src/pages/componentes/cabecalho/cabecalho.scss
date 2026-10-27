@@ -1,3 +1,83 @@
-.cabecalho{
+$fundo: #0f172a;
+$azul: #1e3a8a;
+$destaque: #3b82f6;
+$texto: #f8fafc;
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 32px 16px;
+    background: linear-gradient(135deg, $fundo, $azul);
+    color: $texto;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+
+    img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid $destaque;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        word-break: break-word;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin: 0;
+        color: #cbd5e1;
+        word-break: break-word;
+    }
+
+    input {
+        width: 100%;
+        max-width: 320px;
+        padding: 10px 14px;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        color: $texto;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.2s, background 0.2s;
+
+        &::placeholder {
+            color: #94a3b8;
+        }
+
+        &:focus {
+            border-color: $destaque;
+            background: rgba(255, 255, 255, 0.15);
+        }
+    }
+
+    button {
+        padding: 10px 24px;
+        border: none;
+        border-radius: 8px;
+        background: $destaque;
+        color: $texto;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.1s;
+
+        &:hover {
+            background: darken($destaque, 8%);
+        }
+
+        &:active {
+            transform: scale(0.96);
+        }
+    }
 }

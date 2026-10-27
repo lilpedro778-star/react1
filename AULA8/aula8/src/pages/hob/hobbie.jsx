@@ -5,13 +5,7 @@ import Input from "../../componentes/input/input.jsx";
 import Botao from "../../componentes/botao/botao.jsx";
  
 export default function Hobbie() { 
- const [conteudo, setconteudo] = useState("Uma mão lava a outra"); 
- 
- 
-    function mudar(e) { 
-        setconteudo(e.target.value) 
-    } 
- 
+    const [conteudo, setconteudo] = useState("Uma mão lava a outra"); 
     const [velhotitulo, setvelhotitulo] = useState('?') 
     const [novotitulo, setnovotitulo] = useState('?') 
     const [cor, setcor] = useState('#0f172a') 
@@ -41,7 +35,7 @@ export default function Hobbie() {
             <Input
                 tipo="text"
                 valor={conteudo}
-                aoMudar={mudar}
+                aoMudar={(e) => setconteudo(e.target.value)}
             /> 
             <h1>{velhotitulo}</h1> 
             <Input

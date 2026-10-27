@@ -4,8 +4,17 @@ import OutroComponente from '../OutroComponente/OutroComponente'
 
 export default function Cabecalho() {
 
+  const [conteudo1, setconteudo1] = useState('?13123') 
  const [velhotitulo, setvelhotitulo] = useState('?') 
     const [novotitulo, setnovotitulo] = useState('?') 
+
+    function alterartitulo() {
+    setvelhotitulo(conteudo1)
+}
+
+function alterardescricao() {
+    setvelhotitulo(novotitulo)
+}
     
     return (
         <div className='cabecalho'>
@@ -14,31 +23,27 @@ export default function Cabecalho() {
 
             <img src="./assets/image/OIP.webp" alt="" />
 
-            <h1>{pegartituloantigo}</h1>
+            <h1>{conteudo1}</h1>
 
             <input
                 type="text"
                 placeholder="Digite o título"
-                value={pegartituloantigo}
-                onChange={(e) => settituloantigo(e.target.value)}
+                value={conteudo1}
+                onChange={(e) => setconteudo1(e.target.value)}
             />
 
-            <button onClick={() => setPegarTexto2(pegartituloantigo)}>
-                Alterar
-            </button>
+              <button onClick={alterartitulo}>Alterar titulo1</button>
 
-            <h2>{pegartexto2}</h2>
+            <h2>{velhotitulo}</h2>
 
             <input
                 type="text"
                 placeholder="Digite o texto"
-                value={pegartexto2}
+                value={novotitulo}
                 onChange={(e) => setPegarTexto2(e.target.value)}
             />
 
-            <button onClick={() => setPegarTexto2(pegartexto2)}>
-                Alterar
-            </button>
+            <button onClick={alterardescricao}>Enviar</button>
 
         </div>
     )
