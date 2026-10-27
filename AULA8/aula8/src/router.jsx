@@ -9,6 +9,7 @@ import Calculadora from "./pages/calculadora/calculadora.jsx";
 import Hobbie from "./pages/hob/hobbie.jsx";
 import NotFound from './pages/notfound/naoencontrado.jsx';
 import Api from './pages/chamadaapicep/api.jsx';
+import Calculadora2 from './pages/calculadora2/calculadora2.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export default function Router() {
