@@ -1,6 +1,6 @@
 import './cabecalho.scss'
 import { useState } from 'react'
-import OutroComponente from '../OutroComponente/OutroComponente'
+import OutroComponente from '../OutroComponente/image/image'
 
 export default function Cabecalho() {
 
@@ -40,7 +40,7 @@ function alterardescricao() {
                 type="text"
                 placeholder="Digite o texto"
                 value={novotitulo}
-                onChange={(e) => setPegarTexto2(e.target.value)}
+                onChange={(e) => setnovotitulo(e.target.value)}
             />
 
             <button onClick={alterardescricao}>Enviar</button>
