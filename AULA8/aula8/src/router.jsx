@@ -10,6 +10,7 @@ import Hobbie from "./pages/hob/hobbie.jsx";
 import NotFound from './pages/notfound/naoencontrado.jsx';
 import Api from './pages/chamadaapicep/api.jsx';
 import Calculadora2 from './pages/calculadora2/calculadora2.jsx';
+import Ingressos from './pages/ingressos/ingressos.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export default function Router() {
@@ -26,6 +27,7 @@ export default function Router() {
                 <Route path="/calculadora2" element={<Calculadora2 />} />
                 <Route path="/hobbie" element={<Hobbie />} />
                 <Route path="/api" element={<Api />} />
+                <Route path="/ingressos" element={<Ingressos />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
